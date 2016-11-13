@@ -4,15 +4,65 @@
     <meta charset="UTF-8">
     <title>That Bettina is Bettina Shzu-Juraschek</title>
     <style>
-      body, h1, h2 {
-       font-family: Proxima-Nova, Helvetica, sans-serif;
+      @font-face{ 
+        font-family: 'Charter';
+        src: url('fonts/charter_regular-webfont.woff') format('woff'),
+             url('fonts/charter_regular-webfont.ttf') format('truetype'),
       }
+      body, h1, h2 {
+       font-family: Charter, Proxima-Nova, Helvetica, sans-serif;
+      }
+      h1 {
+        text-transform: uppercase;
+        font-size: 1.5em;
+        letter-spacing: .3em;
+      }
+
+      body {
+        background-color: #B9B9BB;
+        margin-bottom: 0;
+      }
+      .intro {
+        max-width: 650px;
+        font-size: 24px;
+        line-height: 1.5;
+      }
+      a:hover, a:focus {
+        background-color: #2939A3;
+        border: 5px black;
+        color: white;
+      }
+
+      a {
+        color: black;
+        transition: .5s all;
+        text-decoration: none;
+        border-bottom: 2px solid #2939A3;
+      }
+      @media (min-width: 800px) {
+        .intro_and_profile { 
+          display: flex;
+        }
+        .photo {
+          order: 1;
+        }
+        .intro {
+          order: 2;
+        }
+      }
+
     </style>
   </head>
   <body>
     <h1>Bettina Shzu-Juraschek</h1>
-    <h2>I'm a <a href="https://de.linkedin.com/in/bettinashzu" title="Bettina Shzu-Juraschek">revenue-driven product manager</a>, speaker, and career coach living in Berlin since 2008, having previously lived in Taiwan, Texas, New York City, Reunion Island, and Paris. My most ambitious talk to date is "<a href="https://vimeo.com/163568938" title="Leadership is a choice">Leadership is a Choice</a>" at the ACE Conference in Krakow, Poland, in April 2016. Feel free to email me and follow me on <a href="https://twitter.com/thatbettina">Twitter</a> and <a href="https://www.instagram.com/thatbettina/">Instagram</a>.</h2>
-    <!-- put all the content here! -->
+    <div class="intro_and_profile">
+      <div class="intro">
+        <p>Nice to meet you!
+        I'm a <a href="https://de.linkedin.com/in/bettinashzu" title="Bettina Shzu-Juraschek">revenue-driven product manager</a>, speaker, and <a href="https://getyourfirsttechjob.com">career coach</a> living in Berlin since 2008. 
+        My most ambitious talk to date is "<a href="https://vimeo.com/163568938" title="Leadership is a choice">Leadership is a Choice</a>" at the ACE Conference in Krakow, Poland, in April 2016.
+        Feel free to email me and follow me on <a href="https://twitter.com/thatbettina">Twitter</a> and <a href="https://www.instagram.com/thatbettina/">Instagram</a>.</p>
+      </div>
+      <img class="profile" src="background_burned.png" alt="Photo of Bettina Shzu-Juraschek"> 
+    </div>
   </body>
 </html>
-
